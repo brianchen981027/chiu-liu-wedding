@@ -69,5 +69,5 @@
     15% 85%,
     0 85%
   );
-  @apply top-1/2 left-1/2 opacity-90 absolute w-11/12 h-auto p-16 flex flex-col justify-center items-center bg-white lg:w-1/2 md:p-20;
+  @apply top-1/2 left-1/2 opacity-80 absolute w-11/12 h-auto p-16 flex flex-col justify-center items-center bg-white lg:w-1/2 md:p-20;
 }

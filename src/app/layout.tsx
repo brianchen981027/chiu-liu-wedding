@@ -9,9 +9,9 @@ const dancingScript = Dancing_Script({
 });
 
 export const metadata: Metadata = {
-  title: "Chiu and Liu Wedding",
+  title: "Chiu & Liu Wedding",
   description:
-    "Welcome！ Let’s celebrate the beginning of forever with Chiu and Liu！",
+    "誠摯邀請您前來參與邱羚與欣禹的婚禮，共同見證我們人生中最重要的時刻！您的光臨將使我們倍感榮幸，期待與您共享這份幸福與喜悅！",
   icons: {
     icon: "/weddingIcon.ico",
   }

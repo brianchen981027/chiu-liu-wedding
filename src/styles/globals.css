@@ -32,3 +32,7 @@ h3,
 h4 {
   font-family: "Dancing Script", cursive;
 }
+
+.ant-modal .ant-modal-content {
+  @apply bg-transparent shadow-none;
+}

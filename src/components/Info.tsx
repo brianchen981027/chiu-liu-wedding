@@ -6,7 +6,8 @@ import Link from "next/link";
 import Slider1 from "@/Images/SliderShow-1.jpg";
 import Slider2 from "@/Images/SliderShow-2.jpg";
 import Slider3 from "@/Images/SliderShow-3.jpg";
-import Slider4 from "@/Images/SliderShow-4.jpg";
+
+const sliderArr = [Slider1, Slider2, Slider3];
 
 const Info = () => (
   <div
@@ -14,38 +15,16 @@ const Info = () => (
     id="info"
   >
     <Carousel arrows autoplay effect="fade">
-      <div className="w-full h-screen">
-        <Image
-          alt="Wedding Slider"
-          className="h-screen"
-          src={Slider1}
-          style={{ objectFit: "cover", objectPosition: "center" }}
-        />
-      </div>
-      <div className="w-full max-h-[768px]">
-        <Image
-          alt="Wedding Slider"
-          className="h-screen"
-          src={Slider2}
-          style={{ objectFit: "cover", objectPosition: "center" }}
-        />
-      </div>
-      <div className="w-full max-h-[768px]">
-        <Image
-          alt="Wedding Slider"
-          className="h-screen"
-          src={Slider3}
-          style={{ objectFit: "cover", objectPosition: "center" }}
-        />
-      </div>
-      <div className="w-full max-h-[768px]">
-        <Image
-          alt="Wedding Slider"
-          className="h-screen"
-          src={Slider4}
-          style={{ objectFit: "cover", objectPosition: "center" }}
-        />
-      </div>
+      {sliderArr.map((image) => (
+        <div className="w-full h-screen" key={image.src}>
+          <Image
+            alt="Wedding Slider"
+            className="h-screen"
+            src={image}
+            style={{ objectFit: "cover", objectPosition: "center" }}
+          />
+        </div>
+      ))}
     </Carousel>
     <div className="info-banner">
       <div className="flex flex-col justify-center items-center">
