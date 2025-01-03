@@ -30,7 +30,7 @@ const Story = () => {
           <Image
             key={image.src}
             alt="Wedding Image"
-            className="w-2/3 h-64 mb-8 rounded-md cursor-pointer md:w-1/2 md:mb-16 lg:w-1/4 lg:mb-0 transition-opacity duration-300 hover:opacity-75"
+            className="w-2/3 h-64 mb-8 rounded-md pointer-events-none cursor-pointer md:pointer-events-auto md:w-1/2 md:mb-16 lg:pointer-events-auto lg:w-1/4 lg:mb-0 transition-opacity duration-300 hover:opacity-75"
             src={image}
             style={{ objectFit: "cover", objectPosition: "center" }}
             onClick={() => showPreviewImage(image)}
