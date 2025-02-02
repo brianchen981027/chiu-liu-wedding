@@ -25,7 +25,7 @@ const Map = () => (
           <span className="text-mapSubtitle font-bold mr-[4px]">● </span>
           <p className="text-black/60">
             請搭乘捷運紅線至「
-            <span className="text-mapContent font-bold">R7 學甲站</span>
+            <span className="text-mapContent font-bold">R7 獅甲站</span>
             」下車，接著從「
             <span className="text-mapContent font-bold">4號出口</span>
             」出站，步行至「
